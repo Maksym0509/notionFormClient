@@ -1,0 +1,56 @@
+.react-form-builder-toolbar {
+    overflow-y: auto;
+    height: calc(100vh - 165px);
+}
+
+.label-required {
+    color:black !important;
+}
+
+.builderMT {
+    margin-top: 0px !important;
+}
+
+.btn-toolbar {
+    /* display: none; */
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    padding: 30px;
+    max-height: 800px;
+    overflow-y: auto
+}
+
+.formLink {
+    max-height: 30px;
+    max-width: 250px;
+    overflow: hidden;
+}
+
+.formDiv {
+    box-shadow: 0 0.75rem 1.5rem rgba(49, 64, 71, .03);
+    border-radius: 0.25rem;
+    border: solid 1px;
+}
+
+.sortableHidden {
+    display: none;
+}
+
+.rdw-editor-toolbar {
+    display: none !important;
+}
+
+/* .submitBtn {
+    position: absolute;
+    right: 50px;
+    bottom: -120px;
+}
+
+.modal-footer {
+    position: relative;
+} */

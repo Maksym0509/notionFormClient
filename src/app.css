@@ -1,0 +1,20 @@
+.active-star {
+    color: rgba(247, 204, 83, 1) !important;
+}
+
+#userdropdown {
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #006adc !important;
+    border-color: #007BFF !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #007BFF !important;
+    border-color: #007BFF !important;
+}
