@@ -27,13 +27,14 @@ const Section = () => {
 
   let Token = localStorage.getItem('token')
   const authorizationUrl = `https://api.notion.com/v1/oauth/authorize?client_id=${process.env.REACT_APP_DEV_CLIENT_ID}&response_type=code&owner=user&redirect_uri=${process.env.REACT_APP_DEV_REDIRECT_RUL}`;
-  console.log(authorizationUrl);
   const validateTable = () => {
     if (table) {
       localStorage.setItem("selectedTable", JSON.stringify(table));
       history.push("/build");
     }
   };
+
+  console.log("checked the real deploy");
 
   useEffect(() => {
     console.log("token",isError)
