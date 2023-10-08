@@ -24,6 +24,9 @@ const Section = () => {
   const [tableOptions, setTableOptions] = useState([]);
   const [table, setTable] = useState(null);
   const openModal = () => setModal(!modal);
+
+  let Token = localStorage.getItem('token')
+
   const validateTable = () => {
     if (table) {
       localStorage.setItem("selectedTable", JSON.stringify(table));
@@ -68,7 +71,7 @@ const Section = () => {
                 <h2>
                   <span className="text-success fw-bold"></span>
                 </h2>
-                {cookies.token && (
+                {Token && (
                   <Row className="g-0 justify-content-center">
                     <Col md={4}>
                       <div className="mt-3 mt-md-0 h-100">

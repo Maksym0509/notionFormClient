@@ -12,6 +12,7 @@ const config = {
 // Login User
 const login = async (userData) => {
   const response = await axios.post(`${API_URL}/login`, userData, { ...config, withCredentials: 'include' });
+  localStorage.setItem('token', response.data.token);
   return response.data;
 };
 

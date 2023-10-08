@@ -25,8 +25,8 @@ const NavBar = (props) => {
   const [cookies] = useCookies();
   const { isLogoutSuccess, isError, message } = useSelector(
     (state) => state.auth
-  );
-  let Token = cookies.token;
+  );  
+  let Token = localStorage.getItem('token')
 
   const [isOpen, setIsOpen] = useState(false);
   const [userProfile, setUserProfile] = useState(false);

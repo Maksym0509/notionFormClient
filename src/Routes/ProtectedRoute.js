@@ -4,12 +4,13 @@ import { Route, Redirect } from "react-router-dom";
 
 function PrivateRoute({ children, ...rest }) {
   const [cookies] = useCookies(["token"]);
+  let Token = localStorage.getItem('token')
 
   return (
     <Route
       {...rest}
       render={() => {
-        return cookies.token ? children : <Redirect to="/signin" />;
+        return Token ? children : <Redirect to="/signin" />;
       }}
     />
   );
