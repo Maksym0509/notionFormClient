@@ -7,6 +7,7 @@ scripts/flow/*/.flowconfig
 .grunt
 _SpecRunner.html
 __benchmarks__
+.env
 yarn.lock
 remote-repo/
 coverage/
