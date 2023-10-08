@@ -34,7 +34,7 @@ const Section = () => {
     }
   };
 
-  console.log("checked the real deploy");
+  console.log("checked the real deploy1");
 
   useEffect(() => {
     console.log("token",isError)
