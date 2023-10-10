@@ -11,7 +11,8 @@ const FormGenerator = () => {
   const { isSuccess, isError, message, formData, selectedTable } = useSelector(
     (state) => state.form
   );
-
+  
+  const [tmpdata, setTmpdata] = useState([]);
   const [isSubmitBtnLoading, setIsSubmitBtnLoading] = useState(false);
 
   useEffect(() => {
@@ -26,8 +27,21 @@ const FormGenerator = () => {
     dispatch(formReset());
   }, [isSuccess, isError]);
 
+
   const onSubmit = (data) => {
     setIsSubmitBtnLoading(true);
+
+    formData.map(item => {
+      if(item.element === "HyperLink"){
+        const newItem = {
+          custom_name: "hyperlink",
+          id: item.id,
+          name: "hyperlink",
+          value: item.href
+        }
+        data.push(newItem)
+      }
+    })
 
     const newData = formData.reduce((map, obj) => {
       map[obj.id] = obj;

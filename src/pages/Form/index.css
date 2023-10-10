@@ -3,6 +3,12 @@
     height: calc(100vh - 165px);
 }
 
+.react-form-builder-form .rfb-item .form-group .label-required {
+    background: red !important;
+    color: white !important;
+    padding: 5px !important;
+}
+
 .builderMT {
     margin-top: 0px !important;
 }

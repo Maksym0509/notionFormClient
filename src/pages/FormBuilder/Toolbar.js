@@ -220,8 +220,6 @@ const Toolbar = () => {
                     onClick={onRefresh}
                     className="btn btn-warning mr-5"
                   >
-                    {/* <i class="bi bi-arrow-clockwise"></i> */}
-                    {/* <MdRefresh /> */}
                     <RefreshIcon />
                   </button>
                 </NavItem>
